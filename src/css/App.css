@@ -1,0 +1,43 @@
+@font-face {
+  src: url(C:\Users\Jebb\Desktop\tarkov-api\tarkov-api\public\fonts\Jovanny Lemonad - Bender.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+.App {
+  height: 100%;
+  width: 100%;
+}
+/* \\ background-image: url('/public/images/sidebar.PNG');
+background-size: cover; */
+
+img {
+  width: 100%;
+}
+h2 {
+  font-size: 1em;
+  color: white;
+  font-family: 'Bender';
+  font-weight: bold;
+}
+h1 {
+  font-size: 1.75em;
+  color: white;
+  font-family: 'Bender';
+  font-weight: bold;
+}
+li {
+  color: white;
+  font-family: 'Bender';
+  font-weight: italic;
+}
+p {
+  color: white;
+  font-family: 'Bender';
+  font-weight: italic;
+}
