@@ -6,7 +6,7 @@ export default function Market() {
   const [items, setItems] = useState([]);
   const [pageCount, setpageCount] = useState(0);
   const [query, setQuery] = useState('');
-  const [meme, setMeme] = useState([]);
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -96,7 +96,7 @@ export default function Market() {
         previousLabel={'previous'}
         nextLabel={'next'}
         breakLabel={'...'}
-        pageCount={10}
+        pageCount={200}
         marginPagesDisplayed={2}
         pageRangeDisplayed={3}
         onPageChange={handlePageClick}
