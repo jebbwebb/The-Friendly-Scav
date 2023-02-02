@@ -55,7 +55,7 @@ export default function Market() {
               <div class="col-1  border">
                 <h2>item</h2>
                 <div class="row">
-                  <img src={item.image512pxLink}></img>
+                  <img></img>
                 </div>
               </div>
               <div class="col-4 border">
