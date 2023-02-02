@@ -5,8 +5,6 @@ export default function Sidebar() {
     <>
       <div class="row text-center bg-primary">
         <div class="col  bg-secondary">
-          <img src="/images/tarkov-icon.png"></img>
-
           <h1>The Friendly Scav</h1>
           <p>Tarkov guides and resources</p>
           <ol class="nav navbar-nav">
