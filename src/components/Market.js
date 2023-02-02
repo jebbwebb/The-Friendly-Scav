@@ -47,15 +47,15 @@ export default function Market() {
     .map((item) => {
       return (
         <>
-          <div class="row text-center bg-success">
+          <div class="row text-center  ">
             <div class="col"></div>
           </div>
           <div class="container">
-            <div class="row bg-warning text-center">
+            <div class="row  text-center">
               <div class="col-1  border">
                 <h2>item</h2>
                 <div class="row">
-                  <img></img>
+                  <img src={item.image512pxLink}></img>
                 </div>
               </div>
               <div class="col-4 border">
@@ -72,10 +72,6 @@ export default function Market() {
                 <h2>Avg price</h2>
                 <div class="row">{item.avg24hPrice}₽</div>
               </div>
-              <div class="col border">
-                <h2>Sell to trader</h2>
-                <div class="row">15,942₽</div>
-              </div>
             </div>
           </div>
         </>
@@ -83,9 +79,14 @@ export default function Market() {
     });
   return (
     <>
-      <div class="row text-center bg-success">
+      <div class="row text-center ">
         <div class="col">
-          <input type="text" onChange={(e) => setQuery(e.target.value)}></input>
+          <input
+            className="search"
+            type="text"
+            placeholder="Search..."
+            onChange={(e) => setQuery(e.target.value)}
+          ></input>
         </div>
       </div>
 
