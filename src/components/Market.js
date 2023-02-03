@@ -34,6 +34,7 @@ export default function Market() {
     })
       .then((r) => r.json())
       .then((r) => setItems(r.data.items));
+    console.log(items);
   };
 
   const handlePageClick = async (data) => {
@@ -47,30 +48,33 @@ export default function Market() {
     .map((item) => {
       return (
         <>
-          <div class="row text-center  ">
-            <div class="col"></div>
-          </div>
-          <div class="container">
+          <div class="container w-100  ">
             <div class="row  text-center">
-              <div class="col-1  border">
+              <div id="item-image" class="col-1  border">
                 <h2>item</h2>
                 <div class="row">
-                  <img src={item.image512pxLink}></img>
+                  <img class="w-100" src={item.image512pxLink}></img>
                 </div>
               </div>
-              <div class="col-4 border">
+              <div class="col-4 col-lg-3  border">
                 <h2>Title</h2>
-                <div class="row">{item.name}</div>
-              </div>
-              <div class="col-1 border">
-                <h2>Wiki</h2>
                 <div class="row">
-                  <a href={item.wikiLink}>Click Here</a>
+                  <h6 id="item-name">{item.name}</h6>
                 </div>
               </div>
-              <div class="col border">
+              <div id="item-wiki" class="col-3 border">
+                <h2>Wiki</h2>
+                <div class="row w-100">
+                  <a href={item.wikiLink}>
+                    <h6>Click Here</h6>
+                  </a>
+                </div>
+              </div>
+              <div class="col-5  border  ">
                 <h2>Avg price</h2>
-                <div class="row">{item.avg24hPrice}₽</div>
+                <div class="row    ">
+                  <h6 class="text-center">{item.avg24hPrice}₽</h6>
+                </div>
               </div>
             </div>
           </div>
@@ -79,9 +83,10 @@ export default function Market() {
     });
   return (
     <>
-      <div class="row text-center ">
-        <div class="col">
+      <div class="row text-center  w-100 ">
+        <div class="col   pt-3 ">
           <input
+            class="w-50 text-center"
             className="search"
             type="text"
             placeholder="Search..."
@@ -100,7 +105,7 @@ export default function Market() {
         marginPagesDisplayed={2}
         pageRangeDisplayed={3}
         onPageChange={handlePageClick}
-        containerClassName={'pagination justify-content-center'}
+        containerClassName={'pagination  justify-content-center'}
         pageClassName={'page-item'}
         pageLinkClassName={'page-link'}
         previousClassName={'page-item'}

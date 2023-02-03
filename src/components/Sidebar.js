@@ -3,7 +3,7 @@ import React from 'react';
 export default function Sidebar() {
   return (
     <>
-      <div class="row text-center bg-primary">
+      <div class="row text-center  bg-primary">
         <div class="col  bg-secondary">
           <h1>The Friendly Scav</h1>
           <p>Tarkov guides and resources</p>
