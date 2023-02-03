@@ -1,70 +1,7 @@
-# Getting Started with Create React App
+The-Friendly-Scav
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based off a video game called Escape From Tarkov. It is an FPS/MMO/RPG/PVP/PVE/Looter in normal terms it is a game where you control a player character with a stash of gear that you collect while in raids. While in a raid your aim is to battle other players or AI players to complete quests and loot items that you can in turn use yourself or sell to other players. However, anything you bring into a raid will be lost if you die so this can be an extremely frustrating and challenging game. I have thousands of hours in this game so i have an encyclopedic knowledge of every maps, item, gun, attachment, quest, boss, trader, however many players struggle to get more than a couple of hours into the game before quitting due to the complex and brutal nature of the game, so in order to help new players to the game i decided to build a app using a free tarkov api provided by tarkov-dev.com to create a hub of information that players can use to assist them in whatever they may be doing. Whether it is completing quests, fighting bosses, or checking to see how much that item they just picked up is worth on the auction house. Currently the only feature completed is the ability to search for items and see an image, the auction house price, the wiki link to that item, and how much that item is sold to traders for. This is only 1 of the features i plan to bring to the site and once its feature complete i will make the site publically available in hopes of helping the game retain its new players.
 
-## Available Scripts
+Current Features
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The only current feature that is up for testing is the market search. You can search through each item in the game to see the average price of that item and the wiki link for that item provided by The Escape From Tarkov Wiki. You can also filter search for any item using the search bar at the top of the page. When you load a new page the results may take a couple of seconds to load in; this is a fault of the api and once other features are complete i will be swapping over to a paid private api provided by tarkov-market.com which will provide much faster loading times and item price updates every 5 minutes.
