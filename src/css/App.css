@@ -51,6 +51,6 @@ p {
 }
 @media (max-width: 400px) {
   #item-name {
-    font-size: 0.65em;
+    font-size: 0.55em;
   }
 }
