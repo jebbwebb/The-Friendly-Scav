@@ -6,14 +6,14 @@ import ReactDOM from 'react-dom/client';
 
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux';
-import { HashRouter, useActionData } from 'react-router-dom';
+
+import { BrowserRouter, HashRouter, useActionData } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter hashType="hashbang">
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

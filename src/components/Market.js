@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
+import Sidebar from './Sidebar';
 
 export default function Market() {
   const [items, setItems] = useState([]);
@@ -83,39 +84,41 @@ export default function Market() {
     });
   return (
     <>
-      <div class="row text-center  w-100 ">
-        <div class="col   pt-3 ">
-          <input
-            class="w-50 text-center"
-            className="search"
-            type="text"
-            placeholder="Search..."
-            onChange={(e) => setQuery(e.target.value)}
-          ></input>
+      <div class="container  d-flex flex-column justify-content-center align-items-center">
+        {listedItems}
+
+        <div class="row text-center  w-100 ">
+          <div class="col   pt-3 ">
+            <input
+              class="w-50 text-center"
+              className="search"
+              type="text"
+              placeholder="Search..."
+              onChange={(e) => setQuery(e.target.value)}
+            ></input>
+          </div>
         </div>
+
+        <ReactPaginate
+          previousLabel={'previous'}
+          nextLabel={'next'}
+          breakLabel={'...'}
+          pageCount={200}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={3}
+          onPageChange={handlePageClick}
+          containerClassName={'pagination  justify-content-center'}
+          pageClassName={'page-item'}
+          pageLinkClassName={'page-link'}
+          previousClassName={'page-item'}
+          previousLinkClassName={'page-link'}
+          nextClassName={'page-item'}
+          nextLinkClassName={'page-link'}
+          breakClassName={'page-item'}
+          breakLinkClassName={'page-link'}
+          activeClassName={'active'}
+        ></ReactPaginate>
       </div>
-
-      {listedItems}
-
-      <ReactPaginate
-        previousLabel={'previous'}
-        nextLabel={'next'}
-        breakLabel={'...'}
-        pageCount={200}
-        marginPagesDisplayed={2}
-        pageRangeDisplayed={3}
-        onPageChange={handlePageClick}
-        containerClassName={'pagination  justify-content-center'}
-        pageClassName={'page-item'}
-        pageLinkClassName={'page-link'}
-        previousClassName={'page-item'}
-        previousLinkClassName={'page-link'}
-        nextClassName={'page-item'}
-        nextLinkClassName={'page-link'}
-        breakClassName={'page-item'}
-        breakLinkClassName={'page-link'}
-        activeClassName={'active'}
-      ></ReactPaginate>
     </>
   );
 }
